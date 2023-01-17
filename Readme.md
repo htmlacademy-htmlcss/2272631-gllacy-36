@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Илья Ивлев](https://up.htmlacademy.ru/htmlcss/36/user/2272631).
-* Наставник: `Неизвестно`.
+- Студент: [Илья Ивлев](https://up.htmlacademy.ru/htmlcss/36/user/2272631).
+- Наставник: [Андрей Ефимов](https://up.htmlacademy.ru/htmlcss/36/user/367335).
 
 ---
 
