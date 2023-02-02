@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Gllacy Ice-Shop Catalog</title>
   </head>
 
   <body>
 
-    <!--Разметка шапки с навигацией каталога-->
+    <!--Разметка шапки каталога-->
 
     <header class="page-header">
       <nav class="page-navigation">
@@ -29,7 +30,7 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a href="tel:+78005558628">+7 800 555 86 28</a>
+            <a class="tele-link" href="tel:+78005558628">+7 800 555 86 28</a>
           </li>
           <li class="navigation-item">
             <a href="#!" class="navigation-link">
@@ -37,16 +38,16 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#!">Вход</a>
+            <a class="navigation-link-user" href="#!">Вход</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#!">2 товара</a>
+            <a class="navigation-link-user" href="#!">2 товара</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <!--Разметка шапки страницы каталога-->
+    <!--Разметка секци с навигацией-->
 
     <main class="catalog">
       <h1 class="visually-hidden">Каталог мороженого магазина Глейси.</h1>
@@ -64,6 +65,9 @@
         </ol>
         <h1 class="catalog-title">Сливочное мороженое</h1>
       </header>
+
+      <!--Разметка секци каталог-->
+
       <section class="catalog-products">
         <h2 class="visually-hidden">Список товаров с фильтрами.</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -301,15 +305,13 @@
             </li>
             <li class="pagination-item">
               <a class="pagination-link pagination-next" href="#!">
-                <span class="visually-hidden">Следующая страница</span>
+                <span class="visually-hidden">Следующая страница.</span>
               </a>
             </li>
           </ul>
         </div>
       </section>
     </main>
-
-    <!--Разметка футера-->
 
     <footer class="page-footer">
 
@@ -352,7 +354,7 @@
       <section class="page-footer-logo">
         <h2 class="visually-hidden">Логотип.</h2>
         <a class="logo-img-link" href="https://htmlacademy.ru/"><img class="logo-img-html"
-            src="images/content/logo-htmlacademy.svg" width="93" height="26.71" alt="Логотип htmlacademy."></a>
+            src="images/content/logo-htmlacademy.svg" width="93" height="27" alt="Логотип htmlacademy."></a>
         <p class="logo-desc">Сделано в <a class="link-underline" href="https://htmlacademy.ru/">.html academy</a>©
           2021</p>
       </section>
