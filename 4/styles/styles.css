@@ -1,0 +1,361 @@
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Стилизация общих тегов и классов */
+
+body {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  background-size: 100% auto;
+  color: #2d3440;
+  background-color: #feafc3;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.button {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  border-radius: 26px;
+  background: #fcfcfc;
+  color: #2d3440;
+}
+.button-red {
+  color: #fcfcfc;
+  background: #ff2f64;
+}
+
+/* Стилизация шапки с навигацией */
+
+.page-header {
+  line-height: 20px;
+}
+.page-navigation li {
+  list-style-type: none;
+}
+.page-header a {
+  text-decoration: none;
+  color: inherit;
+}
+.navigation-telephone-link {
+  font-weight: 700;
+}
+.navigation-link-user {
+  font-size: 14px;
+}
+
+/* -----------------------------Стилизация главной страницы----------------------------- */
+
+/* Стилизация слайдера */
+
+.slider a {
+  text-decoration: none;
+  color: inherit;
+}
+.slider li {
+  list-style-type: none;
+}
+.banner-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+.banner-desc {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Стилизация секции промо */
+
+.promo li {
+  list-style-type: none;
+}
+.promo-item {
+  background-color: #ff7799;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.promo-item:nth-child(1) {
+  background-image: url("../images/backgrounds/promo-1.png");
+}
+.promo-item:nth-child(2) {
+  background-image: url("../images/backgrounds/promo-2.png");
+}
+.head-slogan {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+.promo-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+/* Стилизация секции с популярными вкусами */
+
+.popular-menu a {
+  text-decoration: none;
+  color: inherit;
+}
+.popular-menu li {
+  list-style-type: none;
+}
+.product-card {
+  background-color: #fcfcfc;
+}
+.product-card-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+.product-card-desc {
+  line-height: 22px;
+  text-align: center;
+  color: #565c66;
+}
+.product-card-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* Стилизация секции с информацией о производстве */
+
+.wafer-block {
+  background-image: url("../images/backgrounds/about-back-waffle.jpg");
+}
+.about {
+  background-color: #fcfcfc;
+}
+.about-desc {
+  color: #565c66;
+}
+.about li {
+  list-style-type: none;
+}
+/* Стилизация секции со статьей и подпиской */
+
+.article-blog {
+  background-image: url("../images/backgrounds/blog-back.jpg");
+  background-repeat: no-repeat;
+  background-color: #fcfcfc;
+}
+.article-blog a {
+  text-decoration: none;
+  color: inherit;
+}
+.blog-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565c66;
+}
+.slogan-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.striped-block {
+  background-image: url("../images/backgrounds/subscription-back-candy.png");
+  background-repeat: no-repeat;
+  background-color: #fcfcfc;
+}
+.subscription-decs {
+  color: #565c66;
+}
+.subscription-form {
+  background-color: #fcfcfc;
+}
+
+/* Стилизация секции с информацией по заказу и доставке */
+
+.delivery {
+  background-image: url("../images/backgrounds/delivery-back.jpg");
+  background-repeat: no-repeat;
+  background-color: #fcfcfc;
+}
+.delivery-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+.delivery-desc {
+  color: #565c66;
+}
+.delivery-form-desc {
+  color: #565c66;
+}
+.delivery-form {
+  background-color: #fcfcfc;
+}
+.field {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #b9b9b9;
+}
+.field-decs {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+/* Стилизация секции с контактами */
+
+.contacts {
+  background-image: url("../images/backgrounds/contacts-back.jpg");
+  background-repeat: no-repeat;
+  background-color: #fcfcfc;
+}
+.contacts-list a {
+  text-decoration: none;
+  color: inherit;
+}
+.contacts-body {
+  background-color: #fcfcfc;
+}
+.contacts-item {
+  color: #565c66;
+}
+.contacts-definition {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.contacts-small {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565c66;
+}
+
+/* Стилизация секции с социальными сетями */
+
+.page-footer-social a {
+  text-decoration: none;
+  color: inherit;
+}
+.page-footer-social li {
+  list-style-type: none;
+}
+/* Стилизация секции с дополнительной информацией */
+
+.page-footer-more-information-item {
+  font-size: 14px;
+  line-height: 20px;
+}
+.page-footer-more-information-item a {
+  text-decoration: none;
+  color: inherit;
+}
+.page-footer-more-information-list li {
+  list-style-type: none;
+}
+.active {
+  font-weight: 700;
+}
+
+/* Стилизация секции с информацией о разработчиках сайта */
+
+.dev-info a {
+  text-decoration: none;
+  color: inherit;
+}
+.dev-info-desc {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* -----------------------------Стилизация страницы каталога----------------------------- */
+
+/* Стилизация секци с навигацией */
+
+.catalog-header a {
+  text-decoration: none;
+  color: inherit;
+}
+.catalog-header ol {
+  list-style-type: none;
+}
+.breadcrumbs-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+.catalog-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+/* Стилизация секции каталог */
+
+.product-list a {
+  text-decoration: none;
+  color: inherit;
+}
+.product-list li {
+  list-style-type: none;
+}
+.catalog-products {
+  color: inherit;
+}
+.catalog-filter-title {
+  font-size: 14px;
+  line-height: 20px;
+}
+.catalog-filter-list {
+  list-style-type: none;
+}
+.control {
+  font-size: 14px;
+  line-height: 20px;
+}
+.catalog-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #fcfcfc;
+}
+.pagination-item {
+  line-height: 20px;
+}
+.pagination-catalog a {
+  text-decoration: none;
+  color: inherit;
+}
+.pagination-catalog li {
+  list-style-type: none;
+}
