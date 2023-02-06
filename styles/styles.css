@@ -1,20 +1,22 @@
 @font-face {
   font-family: "Inter";
-  src: url(/fonts/inter-400.woff2) format("woff2");
+  src: url("fonts/inter-400.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Inter";
-  src: url(/fonts/inter-700.woff2) format("woff2");
+  src: url("fonts/inter-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Inter";
-  src: url(/fonts/inter-900.woff2) format("woff2");
+  src: url("fonts/inter-900.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -27,18 +29,18 @@ body {
   font-size: 16px;
   line-height: 22px;
   background-size: 100% auto;
-  color: #565c66;
+  color: #2d3440;
   background-color: #feafc3;
 }
 img {
   max-width: 100%;
   height: auto;
-  object-fit: contain;
 }
-
 .button {
+  box-sizing: border-box;
   font-family: inherit;
   font-weight: 700;
+  font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-decoration: none;
@@ -48,44 +50,36 @@ img {
   color: #2d3440;
 }
 .button-red {
-  font-size: 16px;
   color: #fcfcfc;
   background: #ff2f64;
 }
-
-/* -----------------------------Стилизация главной страницы----------------------------- */
 
 /* Стилизация шапки с навигацией */
 
 .page-header {
   line-height: 20px;
-  color: #2d3440;
-}
-.page-header a {
-  color: inherit;
-  text-decoration: none;
 }
 .page-navigation li {
   list-style-type: none;
 }
-.tele-link {
+.page-header a {
+  text-decoration: none;
+  color: inherit;
+}
+.navigation-telephone-link {
   font-weight: 700;
 }
 .navigation-link-user {
   font-size: 14px;
 }
-.navigation-link {
-  text-align: center;
-}
+
+/* -----------------------------Стилизация главной страницы----------------------------- */
 
 /* Стилизация слайдера */
 
-.slider {
-  color: #2d3440;
-}
 .slider a {
   text-decoration: none;
-  color: #2d3440;
+  color: inherit;
 }
 .slider li {
   list-style-type: none;
@@ -94,41 +88,33 @@ img {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
-  text-align: left;
 }
 .banner-desc {
   font-size: 18px;
   line-height: 24px;
-  text-align: left;
 }
 
 /* Стилизация секции промо */
 
-.promo {
-  color: #2d3440;
-}
 .promo li {
   list-style-type: none;
 }
 .promo-item {
   background-color: #ff7799;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 .promo-item:nth-child(1) {
-  background-image: url("/images/backgrounds/promo-1.png");
-  background-repeat: no-repeat;
-  background-position: right;
+  background-image: url("../images/backgrounds/promo-1.png");
 }
 .promo-item:nth-child(2) {
-  background-image: url("/images/backgrounds/promo-2.png");
-  background-repeat: no-repeat;
-  background-position: right;
+  background-image: url("../images/backgrounds/promo-2.png");
 }
 .head-slogan {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   text-align: center;
-  color: #2d3440;
 }
 .promo-title {
   font-weight: 700;
@@ -138,12 +124,9 @@ img {
 
 /* Стилизация секции с популярными вкусами */
 
-.popular-menu {
-  color: #2d3440;
-}
 .popular-menu a {
   text-decoration: none;
-  color: #2d3440;
+  color: inherit;
 }
 .popular-menu li {
   list-style-type: none;
@@ -170,12 +153,14 @@ img {
 
 /* Стилизация секции с информацией о производстве */
 
-.about-background {
-  background-image: url("/images/backgrounds/about-back-waffle.jpg");
-  background-repeat: no-repeat;
+.wafer-block {
+  background-image: url("../images/backgrounds/about-back-waffle.jpg");
 }
 .about {
   background-color: #fcfcfc;
+}
+.about-desc {
+  color: #565c66;
 }
 .about li {
   list-style-type: none;
@@ -183,28 +168,32 @@ img {
 /* Стилизация секции со статьей и подпиской */
 
 .article-blog {
-  background-image: url("/images/backgrounds/blog-back.jpg");
+  background-image: url("../images/backgrounds/blog-back.jpg");
   background-repeat: no-repeat;
   background-color: #fcfcfc;
 }
 .article-blog a {
   text-decoration: none;
-  color: #2d3440;
+  color: inherit;
 }
 .blog-title {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: #565c66;
 }
 .slogan-link {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
-.form-background {
-  background-image: url("/images/backgrounds/subscription-back-candy.png");
+.striped-block {
+  background-image: url("../images/backgrounds/subscription-back-candy.png");
   background-repeat: no-repeat;
   background-color: #fcfcfc;
+}
+.subscription-decs {
+  color: #565c66;
 }
 .subscription-form {
   background-color: #fcfcfc;
@@ -213,7 +202,7 @@ img {
 /* Стилизация секции с информацией по заказу и доставке */
 
 .delivery {
-  background-image: url("/images/backgrounds/delivery-back.jpg");
+  background-image: url("../images/backgrounds/delivery-back.jpg");
   background-repeat: no-repeat;
   background-color: #fcfcfc;
 }
@@ -221,47 +210,51 @@ img {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  color: #2d3440;
+}
+.delivery-desc {
+  color: #565c66;
+}
+.delivery-form-desc {
+  color: #565c66;
 }
 .delivery-form {
   background-color: #fcfcfc;
 }
-.delivery-form-date {
+.field {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #b9b9b9;
+}
+.field-decs {
   font-weight: 700;
   line-height: 20px;
-  color: #2d3440;
 }
-.delivery-form-phone {
-  font-weight: 700;
-  line-height: 20px;
-  color: #2d3440;
-}
-.delivery-form-address {
-  font-weight: 700;
-  line-height: 20px;
-  color: #2d3440;
-}
+
 /* Стилизация секции с контактами */
 
 .contacts {
-  background-image: url("/images/backgrounds/contacts-back.jpg");
+  background-image: url("../images/backgrounds/contacts-back.jpg");
   background-repeat: no-repeat;
   background-color: #fcfcfc;
 }
 .contacts-list a {
   text-decoration: none;
-  color: #2d3440;
+  color: inherit;
 }
 .contacts-body {
   background-color: #fcfcfc;
+}
+.contacts-item {
+  color: #565c66;
 }
 .contacts-definition {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #2d3440;
 }
 .contacts-small {
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #565c66;
@@ -271,7 +264,7 @@ img {
 
 .page-footer-social a {
   text-decoration: none;
-  color: #2d3440;
+  color: inherit;
 }
 .page-footer-social li {
   list-style-type: none;
@@ -281,13 +274,12 @@ img {
 .page-footer-more-information-item {
   font-size: 14px;
   line-height: 20px;
-  color: #2d3440;
 }
 .page-footer-more-information-item a {
   text-decoration: none;
-  color: #2d3440;
+  color: inherit;
 }
-.page-footer-more-information-list {
+.page-footer-more-information-list li {
   list-style-type: none;
 }
 .active {
@@ -296,26 +288,22 @@ img {
 
 /* Стилизация секции с информацией о разработчиках сайта */
 
-.page-footer-logo a {
+.dev-info a {
   text-decoration: none;
-  color: #2d3440;
+  color: inherit;
 }
-.logo-desc {
+.dev-info-desc {
   font-size: 12px;
   line-height: 16px;
-  color: #2d3440;
 }
 
 /* -----------------------------Стилизация страницы каталога----------------------------- */
 
 /* Стилизация секци с навигацией */
 
-.catalog-header {
-  color: #2d3440;
-}
 .catalog-header a {
   text-decoration: none;
-  color: #2d3440;
+  color: inherit;
 }
 .catalog-header ol {
   list-style-type: none;
@@ -335,13 +323,13 @@ img {
 
 .product-list a {
   text-decoration: none;
-  color: #2d3440;
+  color: inherit;
 }
 .product-list li {
   list-style-type: none;
 }
 .catalog-products {
-  color: #2d3440;
+  color: inherit;
 }
 .catalog-filter-title {
   font-size: 14px;
@@ -358,7 +346,7 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
-  background: rgba(252, 252, 252, 0.3);
+  background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid #fcfcfc;
 }
 .pagination-item {
@@ -366,7 +354,7 @@ img {
 }
 .pagination-catalog a {
   text-decoration: none;
-  color: #2d3440;
+  color: inherit;
 }
 .pagination-catalog li {
   list-style-type: none;

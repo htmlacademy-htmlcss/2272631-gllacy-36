@@ -31,7 +31,7 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="tele-link" href="tel:+78005558628">+7 800 555 86 28</a>
+            <a class="navigation-telephone-link" href="tel:+78005558628">+7 800 555 86 28</a>
           </li>
           <li class="navigation-item">
             <a href="#!" class="navigation-link">
@@ -47,6 +47,8 @@
         </ul>
       </nav>
     </header>
+
+    <!--Разметка основной части сайта-->
 
     <!--Разметка главного слайдера-->
 
@@ -198,7 +200,7 @@
 
       <!--Разметка секции с информацией о производстве-->
 
-      <div class="about-background">
+      <div class="wafer-block">
         <section class="about">
           <h2 class="head-slogan">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного
             производства на развес</h2>
@@ -233,13 +235,13 @@
           <a class="slogan-link" href="#!">10 способов сервировки фруктовых щербетов
             к столу</a>
         </div>
-        <div class="form-background">
+        <div class="striped-block">
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <h2 class="visually-hidden">Подписка на рассылку.</h2>
             <p class="subscription-decs">Подпишитесь на нашу сладкую рассылку и будьте всегда
               в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
               Честно =)</p>
-            <label for="subscription-email">Email</label>
+            <label for="subscription-email"><span class="visually-hidden">Email.</span></label>
             <input class="field" placeholder="email@example.com" type="email" name="subscription-email"
               id="subscription-email" required>
             <button class="button button-red" type="submit">
@@ -260,18 +262,18 @@
             Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
           </p>
           <p class="delivery-form-date">
-            <label for="delivery-form-date">Дата</label>
+            <label class="field-decs" for="delivery-form-date">Дата</label>
             <input class="field" type="text" id="delivery-form-date" name="delivery-form-date" placeholder="01.04.2020">
           </p>
           <p class="delivery-form-phone">
-            <label for="delivery-form-phone">
+            <label class="field-decs" for="delivery-form-phone">
               Телефон
             </label>
             <input class="field" type="tel" id="delivery-form-phone" name="delivery-form-phone"
               placeholder="+7 800 999-00-00">
           </p>
           <p class="delivery-form-address">
-            <label for="delivery-form-address">
+            <label class="field-decs" for="delivery-form-address">
               Адрес
             </label>
             <input class="field" type="text" id="delivery-form-address" name="delivery-form-address"
@@ -299,6 +301,8 @@
         </div>
       </section>
     </main>
+
+    <!--Разметка основной части сайта-->
 
     <!--Разметка футера-->
 
@@ -340,11 +344,11 @@
 
       <!--Разметка секции с информацией о разработчиках сайта-->
 
-      <section class="page-footer-logo">
+      <section class="dev-info">
         <h2 class="visually-hidden">Логотип.</h2>
         <a class="logo-img-link" href=" https://htmlacademy.ru/"><img class="logo-img-html"
             src="images/content/logo-htmlacademy.svg" width="93" height="27" alt="Логотип htmlacademy."></a>
-        <p class="logo-desc">Сделано в <a class="link-underline" href="https://htmlacademy.ru/">.html academy</a>©
+        <p class="dev-info-desc">Сделано в <a class="link-underline" href="https://htmlacademy.ru/">.html academy</a>©
           2021</p>
 
       </section>
