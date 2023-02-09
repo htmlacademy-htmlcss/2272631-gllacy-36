@@ -14,7 +14,8 @@
 
     <!--Разметка шапки с навигацией-->
 
-    <header class="page-header">
+
+    <header class="page-header centerer-container">
       <nav class="page-navigation">
         <a class="navigation-link-logo" href="index.html"><img class="logo-img-gllacy"
             src="images/content/logo-gllacy.svg" width="137" height="56" alt="Логотип магазина."></a>
@@ -52,13 +53,13 @@
 
     <!--Разметка главного слайдера-->
 
-    <main class="page-main">
+    <main class="main-container centerer-container">
       <h1 class="visually-hidden">Магазин мороженого Глейси.</h1>
       <section class="slider">
         <h2 class="visually-hidden">Выбор мороженого.</h2>
         <div class="slider-body">
           <ul class="slider-list">
-            <li class="slider-item">
+            <li class="slider-item slider-item-active">
               <h3 class="banner-title">Нежный пломбир с клубничным джемом</h3>
               <p class="banner-desc">
                 Натуральное мороженое из свежих сливок и молока с вкуснейшим
@@ -233,14 +234,16 @@
         <div class="article-blog">
           <h2 class="blog-title">Новое в нашем блоге</h2>
           <a class="slogan-link" href="#!">10 способов сервировки фруктовых щербетов
-            к столу</a>
+            к столу
+          </a>
         </div>
         <div class="striped-block">
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <h2 class="visually-hidden">Подписка на рассылку.</h2>
             <p class="subscription-decs">Подпишитесь на нашу сладкую рассылку и будьте всегда
               в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
-              Честно =)</p>
+              Честно =)
+            </p>
             <label for="subscription-email"><span class="visually-hidden">Email.</span></label>
             <input class="field" placeholder="email@example.com" type="email" name="subscription-email"
               id="subscription-email" required>
@@ -254,9 +257,11 @@
       <!--Разметка секции с информацией по заказу и доставке-->
 
       <section class="delivery">
-        <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
-        <p class="delivery-desc">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите
-          доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        <div class="delivery-content">
+          <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
+          <p class="delivery-desc">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите
+            доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        </div>
         <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="delivery-form-desc">
             Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
@@ -300,13 +305,14 @@
           <a class="button button-red" href="#!">Форма обратной связи</a>
         </div>
       </section>
+
     </main>
 
     <!--Разметка основной части сайта-->
 
     <!--Разметка футера-->
 
-    <footer class="page-footer">
+    <footer class="page-footer centerer-container">
 
       <!--Разметка секции с социальными сетями-->
 
@@ -346,14 +352,14 @@
 
       <section class="dev-info">
         <h2 class="visually-hidden">Логотип.</h2>
-        <a class="logo-img-link" href=" https://htmlacademy.ru/"><img class="logo-img-html"
+        <a class="dev-info-logo-link" href=" https://htmlacademy.ru/"><img class="logo-img-html"
             src="images/content/logo-htmlacademy.svg" width="93" height="27" alt="Логотип htmlacademy."></a>
         <p class="dev-info-desc">Сделано в <a class="link-underline" href="https://htmlacademy.ru/">.html academy</a>©
-          2021</p>
+          2021
+        </p>
 
       </section>
     </footer>
-
   </body>
 
 </html>
