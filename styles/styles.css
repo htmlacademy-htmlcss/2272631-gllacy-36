@@ -564,16 +564,23 @@ img {
   padding-top: 41px;
   padding-bottom: 41px;
 }
+
+.pagination::before {
+  content: "";
+  width: 152px;
+}
+
 .show-more-button {
   padding: 12px 32px 12px 32px;
   border-radius: 26px;
-  margin-left: 490px;
 }
 
 .pagination-catalog {
+  width: 168px;
   padding-left: 0;
   margin: 0;
   display: flex;
+  justify-content: flex-end;
 }
 
 .pagination-item {
