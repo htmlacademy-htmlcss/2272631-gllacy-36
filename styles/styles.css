@@ -135,10 +135,12 @@ img {
 .slider-pagination {
   padding: 0;
   list-style-type: none;
+  margin: 0;
 }
 
 .slider-list {
   padding: 0;
+  margin: 0;
 }
 
 .banner-title {
@@ -327,14 +329,14 @@ img {
   background-color: #fcfcfc;
   padding-top: 64px;
   padding-right: 64px;
-  padding-left: 100px;
   padding-bottom: 64px;
+  padding-left: 100px;
   border-radius: 16px;
 }
 
 .delivery-content {
   width: 371px;
-  margin-right: 135px;
+  margin-right: auto;
 }
 
 .delivery-form {
