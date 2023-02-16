@@ -45,6 +45,12 @@ img {
   height: auto;
 }
 
+.centerer-container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
 .button {
   box-sizing: border-box;
   font-family: inherit;
@@ -53,6 +59,7 @@ img {
   line-height: 20px;
   text-align: center;
   text-decoration: none;
+  padding: 12px 32px;
   border-radius: 26px;
   background: #fcfcfc;
   color: #2d3440;
@@ -61,31 +68,28 @@ img {
 .button-red {
   color: #fcfcfc;
   background: #ff2f64;
+  display: block;
 }
 
 .main-container {
   flex-grow: 1;
 }
 
-.centerer-container {
-  width: 1170px;
-  margin: 0 auto;
-  padding: 0 40px;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Стилизация шапки с навигацией */
 
 .page-header {
   line-height: 20px;
-}
-
-.navigation-item {
-  list-style-type: none;
-}
-
-.navigation-link {
-  text-decoration: none;
-  color: inherit;
 }
 
 .page-navigation {
@@ -96,15 +100,38 @@ img {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   width: 470px;
   align-items: center;
   margin: 0;
   padding: 0;
+  margin-left: 16px;
+}
+
+.navigation-item {
+  list-style-type: none;
+}
+
+.navigation-link {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.search-icon {
+  padding: 8px;
 }
 
 .navigation-user {
   margin-left: auto;
   justify-content: flex-end;
+  gap: 16px;
+}
+
+.navigation-user .navigation-link {
+  min-width: 16px;
+  min-height: 16px;
 }
 
 .navigation-telephone-link {
@@ -114,14 +141,25 @@ img {
 }
 
 .navigation-link-user {
+  display: block;
   font-size: 14px;
   text-decoration: none;
   color: inherit;
+  padding: 6px 16px;
 }
 
 /* -----------------------------Стилизация главной страницы----------------------------- */
 
 /* Стилизация слайдера */
+
+.slider {
+  margin-bottom: 80px;
+}
+
+.slider-list {
+  padding: 0;
+  margin: 0;
+}
 
 .slider-item {
   list-style-type: none;
@@ -132,26 +170,25 @@ img {
   display: block;
 }
 
-.slider-pagination {
-  padding: 0;
-  list-style-type: none;
-  margin: 0;
-}
-
-.slider-list {
-  padding: 0;
-  margin: 0;
-}
-
 .banner-title {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
+  margin: 0;
 }
 
 .banner-desc {
   font-size: 18px;
   line-height: 24px;
+  margin: 0;
+}
+
+/* Стилизация секции пагинации слайдера */
+
+.slider-pagination {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
 }
 
 .main-social {
@@ -160,6 +197,19 @@ img {
 
 /* Стилизация секции промо */
 
+.promo {
+  margin-bottom: 80px;
+}
+
+.head-slogan {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 55px;
+}
+
 .promo-list {
   display: flex;
   justify-content: space-between;
@@ -167,12 +217,12 @@ img {
 }
 
 .promo-item {
-  width: 334px;
+  width: 317px;
   list-style-type: none;
   background-color: #ff7799;
   background-repeat: no-repeat;
   background-position: right;
-  padding: 36px 200px 36px 36px;
+  padding: 36px 217px 36px 36px;
   border-radius: 16px;
 }
 
@@ -184,22 +234,29 @@ img {
   background-image: url("../images/backgrounds/promo-2.png");
 }
 
-.head-slogan {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .promo-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.promo-desc {
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.promo-button {
+  display: block;
+  width: 176px;
 }
 
 /* Стилизация секции с популярными вкусами */
+
+.popular-menu {
+  margin-bottom: 80px;
+}
 
 .product-list {
   padding: 0;
@@ -234,6 +291,7 @@ img {
   padding: 24px;
   background-image: url("../images/backgrounds/about-back-waffle.jpg");
   border-radius: 16px;
+  margin-bottom: 80px;
 }
 
 .about {
@@ -246,11 +304,10 @@ img {
 .about-list {
   display: flex;
   flex-wrap: wrap;
-}
-
-.about-desc {
-  width: 505px;
-  color: #565c66;
+  margin: 0;
+  justify-content: space-between;
+  row-gap: 40px;
+  padding: 0;
 }
 
 .about-item {
@@ -258,8 +315,11 @@ img {
   padding: 0;
 }
 
-.about-list {
-  padding: 0;
+.about-desc {
+  width: 505px;
+  min-height: 66px;
+  color: #565c66;
+  margin: 0;
 }
 
 /* Стилизация секции со статьей и подпиской */
@@ -267,6 +327,7 @@ img {
 .subscription-group {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .article-blog {
@@ -276,17 +337,7 @@ img {
   background-color: #fcfcfc;
   border-radius: 16px;
   background-size: cover;
-}
-
-.slogan-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  padding-left: 32px;
-  padding-right: 235px;
+  background-position: right top;
 }
 
 .blog-title {
@@ -300,46 +351,88 @@ img {
   margin-bottom: 12px;
 }
 
+.slogan-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  padding-left: 32px;
+  padding-right: 235px;
+  padding-bottom: 67px;
+}
+
 .striped-block {
   width: 558px;
   padding: 6px;
   background-image: url("../images/backgrounds/subscription-back-candy.png");
-  background-repeat: no-repeat;
   background-color: #fcfcfc;
   background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+}
+
+.subscription-form {
+  padding: 26px;
+  background-color: #fcfcfc;
   border-radius: 16px;
 }
 
 .subscription-decs {
   color: #565c66;
+  margin: 0;
+  margin-bottom: 44px;
 }
 
-.subscription-form {
-  padding: 26px 26px 28px;
-  background-color: #fcfcfc;
-  border-radius: 16px;
+.subscription-form-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Стилизация секции с информацией по заказу и доставке */
 
 .delivery {
   display: flex;
+  align-items: center;
   background-image: url("../images/backgrounds/delivery-back.jpg");
   background-repeat: no-repeat;
   background-color: #fcfcfc;
+  background-size: cover;
   padding-top: 64px;
   padding-right: 64px;
   padding-bottom: 64px;
   padding-left: 100px;
   border-radius: 16px;
+  margin-bottom: 80px;
 }
 
 .delivery-content {
-  width: 371px;
+  width: 375px;
+  min-height: 210px;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.delivery-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.delivery-desc {
+  color: #565c66;
+  margin: 0;
 }
 
 .delivery-form {
+  display: grid;
+  grid-template-columns: 119px 152px 117px;
+  gap: 20px 18px;
+  align-content: center;
   background-color: #fcfcfc;
   width: 423px;
   padding-top: 40px;
@@ -349,18 +442,34 @@ img {
   border-radius: 8px;
 }
 
-.delivery-title {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
-}
-
-.delivery-desc {
-  color: #565c66;
-}
-
 .delivery-form-desc {
   color: #565c66;
+  margin: 0;
+  grid-column: 1 / -1;
+}
+
+.delivery-form-date {
+  margin: 0;
+  grid-column: 1 / -3;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.delivery-form-phone {
+  margin: 0;
+  grid-column: 2 / -1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.delivery-form-address {
+  margin: 0;
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
 }
 
 .field {
@@ -368,11 +477,31 @@ img {
   font-size: 16px;
   line-height: 20px;
   color: #b9b9b9;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #b9b9b9;
+}
+
+.field::placeholder {
+  color: #b9b9b9;
+  opacity: 1;
 }
 
 .field-decs {
   font-weight: 700;
   line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.field-subscription {
+  width: 332px;
+}
+
+.delivery-form-button {
+  grid-column: 2 / -2;
+  align-self: flex-end;
+  margin-top: 12px;
 }
 
 /* Стилизация секции с контактами */
@@ -388,13 +517,9 @@ img {
   border-radius: 16px;
 }
 
-.contacts-phone {
-  text-decoration: none;
-  color: inherit;
-}
-
 .contacts-body {
   width: 263px;
+  min-height: 284px;
   background-color: #fcfcfc;
   border-radius: 8px;
   padding-top: 40px;
@@ -403,17 +528,31 @@ img {
   padding-bottom: 42px;
 }
 
+.contacts-list {
+  margin: 0;
+}
+
 .contacts-item {
   color: #565c66;
+  margin-bottom: 12px;
 }
 
 .contacts-definition {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.contacts-phone {
+  text-decoration: none;
+  color: inherit;
 }
 
 .contacts-small {
+  display: block;
+  margin-top: -2px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -422,28 +561,49 @@ img {
 
 /* Стилизация секции с социальными сетями */
 
-.social-link {
-  text-decoration: none;
-  color: inherit;
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  min-height: 57px;
+}
+
+.page-footer-social {
+  width: 104px;
+  min-height: 24px;
+}
+
+.footer-social-list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .social-item {
   list-style-type: none;
 }
 
-/* Стилизация секции с дополнительной информацией */
-
-.page-footer {
-  display: flex;
-  justify-content: space-between;
+.social-link {
+  text-decoration: none;
+  color: inherit;
 }
 
-.footer-social {
-  padding: 0;
+/* Стилизация секции с дополнительной информацией */
+
+.page-footer-more-information {
+  width: 356px;
+  min-height: 48px;
 }
 
 .page-footer-more-information-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0;
+  row-gap: 8px;
+  column-gap: 24px;
+  margin: 0;
 }
 
 .page-footer-more-information-item {
@@ -463,23 +623,33 @@ img {
 
 /* Стилизация секции с информацией о разработчиках сайта */
 
-.link-underline {
-  text-decoration: none;
-  color: inherit;
+.dev-info {
+  width: 193px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .dev-info-desc {
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
+}
+
+.link-underline {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* -----------------------------Стилизация страницы каталога----------------------------- */
 
-/* Стилизация секци с навигацией */
+/* Стилизация секци с хлебными крошками */
 
 .breadcrumbs {
   display: flex;
   padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .breadcrumbs-item {
@@ -487,6 +657,7 @@ img {
 }
 
 .breadcrumbs-link {
+  margin-right: 28px;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -494,45 +665,27 @@ img {
   color: inherit;
 }
 
+/* Стилизация секци с фильтрами для каталога */
+
+.catalog-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  width: 823px;
+  min-height: 148px;
+}
+
 .catalog-title {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-}
-.product-card {
-  list-style-type: none;
-}
-
-.product-card-link {
-  text-decoration: none;
-  color: inherit;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
-.product-card-button {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Стилизация секции каталог */
-
-.catalog-products {
-  display: flex;
-  flex-direction: column;
-  color: inherit;
-}
-
-.product-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.product-card {
-  width: 270px;
-}
-
-.catalog-filter {
-  width: 823px;
+.catalog-filter-group {
+  padding: 0;
+  margin: 0;
 }
 
 .catalog-filter-title {
@@ -541,7 +694,9 @@ img {
 }
 
 .catalog-filter-list {
+  display: flex;
   list-style-type: none;
+  margin: 0;
 }
 
 .control {
@@ -557,7 +712,31 @@ img {
   border: 2px solid #fcfcfc;
 }
 
-/* Стилизация пагинации страницы каталога */
+/* Стилизация каталога с карточками товаров */
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.product-card {
+  width: 270px;
+  list-style-type: none;
+}
+
+.product-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card-button {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Стилизация пагинации каталога */
 
 .pagination {
   display: flex;
@@ -569,12 +748,7 @@ img {
 
 .pagination::before {
   content: "";
-  width: 152px;
-}
-
-.show-more-button {
-  padding: 12px 32px 12px 32px;
-  border-radius: 26px;
+  width: 168px;
 }
 
 .pagination-catalog {
@@ -582,14 +756,21 @@ img {
   padding-left: 0;
   margin: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .pagination-item {
   line-height: 20px;
   list-style-type: none;
 }
+
 .pagination-link {
   text-decoration: none;
   color: inherit;
+  padding: 2px 7px;
+}
+
+.show-more-button {
+  padding: 12px 32px 12px 32px;
+  border-radius: 26px;
 }

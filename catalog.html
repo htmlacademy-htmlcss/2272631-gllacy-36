@@ -9,10 +9,9 @@
     <title>Gllacy Ice-Shop Catalog</title>
   </head>
 
+  <!--Разметка шапки каталога с навигацией-->
+
   <body>
-
-    <!--Разметка шапки каталога-->
-
     <header class="page-header centerer-container">
       <nav class="page-navigation">
         <a class="navigation-link-logo" href="index.html"><img class="logo-img-gllacy"
@@ -33,7 +32,7 @@
             <a class="navigation-telephone-link" href="tel:+78005558628">+7 800 555 86 28</a>
           </li>
           <li class="navigation-item">
-            <a href="#!" class="navigation-link">
+            <a href="#!" class="navigation-link search-icon">
               <span class="visually-hidden">Поиск.</span>
             </a>
           </li>
@@ -47,7 +46,7 @@
       </nav>
     </header>
 
-    <!--Разметка секци с навигацией-->
+    <!--Разметка секци с хлебными крошками-->
 
     <main class="main-container centerer-container">
       <h1 class="visually-hidden">Каталог мороженого магазина Глейси.</h1>
@@ -66,12 +65,11 @@
         <h1 class="catalog-title">Сливочное мороженое</h1>
       </header>
 
-      <!--Разметка секци каталог-->
+      <!--Разметка секци с фильтрами для каталога -->
 
       <section class="catalog-products">
         <h2 class="visually-hidden">Список товаров с фильтрами.</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Сортировка:</legend>
             <select class="select-control" name="sorting" aria-label="Cортировка.">
@@ -80,11 +78,9 @@
               <option value="expensive">сначала дорогое</option>
             </select>
           </fieldset>
-
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
           </fieldset>
-
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Жирность:</legend>
             <ul class="catalog-filter-list">
@@ -114,7 +110,6 @@
               </li>
             </ul>
           </fieldset>
-
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Наполнители:</legend>
             <ul class="catalog-filter-list">
@@ -153,7 +148,7 @@
           <button class="catalog-button" type="submit">Применить</button>
         </form>
 
-        <!--Разметка карточек с товарами страницы каталога-->
+        <!--Разметка каталога с карточками товаров-->
 
         <ul class="product-list">
           <li class="product-card">
@@ -278,7 +273,7 @@
           </li>
         </ul>
 
-        <!--Разметка пагинации страницы каталога-->
+        <!--Разметка пагинации каталога-->
 
         <div class="pagination">
           <button class="button show-more-button" type="button">Показать ещё</button>
@@ -313,15 +308,12 @@
       </section>
     </main>
 
-    <!--Разметка футера-->
+    <!--Разметка секции с социальными сетями-->
 
     <footer class="page-footer centerer-container">
-
-      <!--Разметка секции с социальными сетями-->
-
       <section class="page-footer-social">
         <h2 class="visually-hidden">Наши социальные сети.</h2>
-        <ul class="footer-social social">
+        <ul class="footer-social-list">
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy"><span class="visually-hidden">VK</span></a>
           </li>
