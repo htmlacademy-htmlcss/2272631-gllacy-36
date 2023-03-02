@@ -1094,7 +1094,6 @@ img {
 }
 
 .product-card-button:hover {
-  color: inherit;
   background-color: hsla(0, 0%, 99%, 0.3);
 }
 
