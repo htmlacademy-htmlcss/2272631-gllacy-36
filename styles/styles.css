@@ -71,31 +71,53 @@ img {
   padding: 12px 32px;
   border-radius: 26px;
   border: none;
-  background: #fcfcfc;
+  background-color: hsla(0, 0%, 99%, 1);
   color: #2d3440;
   box-shadow: 0 0 0 4px hsla(0, 0%, 99%, 0.4), 0 4px 12px rgba(45, 52, 64, 0.1);
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .button:hover {
   background-color: hsla(0, 0%, 99%, 0.4);
-  box-shadow: 0 0 0 4px #fcfcfc, 0 4px 15px hsl(0deg 0% 52% / 15%);
-  transition: 0.4s;
+  box-shadow: 0 0 0 4px hsla(0, 0%, 99%, 1),
+    0 4px 15px rgba(133, 133, 133, 0.15);
 }
 
 .button:active {
-  background-color: #fcfcfc;
-  box-shadow: 0 0 0 2px #2d3440, 0 4px 12px rgb(45 52 64 / 10%);
+  background-color: hsla(0, 0%, 99%, 1);
+  box-shadow: 0 0 0 2px hsla(218, 17%, 21%, 1), 0 4px 12px rgb(45 52 64 / 10%);
 }
 
 .button:focus-visible {
   background-color: hsla(0, 0%, 99%, 0.5);
+  /* box-shadow: 0 0 0 2px hsla(218, 17%, 21%, 1), 0 4px 12px rgb(45 52 64 / 10%); */
   box-shadow: 0 0 0 2px #2d3440, 0 4px 12px rgb(45 52 64 / 10%);
 }
 
 .button-red {
   color: #fcfcfc;
-  background: #ff2f64;
+  background-color: hsla(345, 100%, 59%, 1);
+  box-shadow: 0 0 0 4px hsla(345, 100%, 59%, 0.3),
+    0px 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.button-red:hover {
+  color: #2d3440;
+  background-color: hsla(0, 0%, 99%, 0.3);
+  box-shadow: 0 0 0 4px hsla(345, 100%, 59%, 1);
+}
+
+.button-red:active {
+  background-color: hsla(345, 98%, 84%, 1);
+  box-shadow: 0 0 0 2px hsla(218, 17%, 21%, 1),
+    0px 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.button-red:focus-visible {
+  background-color: hsla(345, 100%, 59%, 1);
+  box-shadow: 0 0 0 2px hsla(218, 17%, 21%, 1),
+    0px 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .main-container {
@@ -957,11 +979,33 @@ img {
 }
 
 .catalog-button {
+  box-sizing: border-box;
+  border-radius: 20px;
+  cursor: pointer;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
-  background-color: rgba(252, 252, 252, 0.3);
-  border: 2px solid #fcfcfc;
+  padding: 8px 32px;
+  background-color: hsla(0, 0%, 99%, 0.3);
+  box-shadow: 0 0 0 2px hsla(0, 0%, 99%, 1), 0px 4px 12px rgba(45, 52, 64, 0.1);
+  transition: 0.4s;
+  border: none;
+}
+
+.catalog-button:hover {
+  background-color: hsla(0, 0%, 99%, 1);
+  box-shadow: 0 0 0 2px hsla(0, 0%, 99%, 0.3),
+    0px 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.catalog-button:active {
+  background-color: hsla(0, 0%, 99%, 0.5);
+  box-shadow: none;
+}
+
+.catalog-button:focus-visible {
+  background-color: hsla(0, 0%, 99%, 0.3);
+  box-shadow: 0 0 0 2px hsla(218, 17%, 21%, 1);
 }
 
 /* Стилизация каталога с карточками товаров */
@@ -1105,6 +1149,8 @@ img {
   text-decoration: none;
   color: inherit;
   padding: 2px 7px;
+  width: 24px;
+  height: 24px;
 }
 
 .catalog-show-more-button {
