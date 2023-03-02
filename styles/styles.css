@@ -1145,11 +1145,33 @@ img {
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
   text-decoration: none;
   color: inherit;
   padding: 2px 7px;
-  width: 24px;
   height: 24px;
+  min-width: 24px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pagination-current {
+  background-color: #fcfcfc;
+  border-radius: 50px;
+}
+
+.pagination-prev {
+  background-image: url("../images/icons/arrow-left.svg");
+}
+
+.pagination-next {
+  background-image: url("../images/icons/arrow-right.svg");
+}
+
+.pagination-disabled {
+  opacity: 0.3;
 }
 
 .catalog-show-more-button {
