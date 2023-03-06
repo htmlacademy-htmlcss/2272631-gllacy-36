@@ -230,6 +230,7 @@ img {
   line-height: 20px;
   text-decoration: none;
   transition: opacity 0.3s ease-in-out;
+  outline-offset: 2px;
 }
 
 .navigation-telephone-link:hover {
@@ -239,7 +240,6 @@ img {
 
 .navigation-telephone-link:focus-visible {
   outline: 2px solid;
-  outline-offset: 2px;
 }
 
 .navigation-link-user {
@@ -334,9 +334,8 @@ img {
   height: 16px;
   margin: auto;
   background-color: currentColor;
-  -webkit-mask: url("../images/icons/arrow-slider-left-new.svg") no-repeat
-    center/100%;
-  mask: url("../images/icons/arrow-slider-left-new.svg") no-repeat center/100%;
+  -webkit-mask: url("../images/icons/arrow-slider.svg") no-repeat center/100%;
+  mask: url("../images/icons/arrow-slider.svg") no-repeat center/100%;
 }
 
 .slider-control-prev {
