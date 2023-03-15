@@ -1073,7 +1073,7 @@ img {
   list-style-type: none;
   background-color: #ff7799;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: bottom right;
   padding: 36px 217px 36px 36px;
   border-radius: 16px;
 }
